@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="assets/anuheader_clean.gif" width="100%" alt="Header banner" style="border-radius: 15px; margin-bottom: 20px;" />
+  <img src="anuheader_clean.gif" width="100%" alt="Header banner" style="border-radius: 15px; margin-bottom: 20px;" />
   
 # Hi there, I'm Anugraha S! 👋
 
-<img src="assets/titles.svg" alt="Dynamic Titles" />
+<img src="titles.svg" alt="Dynamic Titles" />
 
 <p align="center">
   <a href="https://git.io/typing-svg">
