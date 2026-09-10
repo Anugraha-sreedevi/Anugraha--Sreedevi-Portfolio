@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 100" width="800" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&amp;display=swap');
+      
+      text {
+        font-family: 'Outfit', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        fill: #ff2a85;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        opacity: 0;
+      }
+      
+      .neon {
+        filter: drop-shadow(0px 0px 8px rgba(255, 42, 133, 0.8));
+      }
+
+      /* Sliding and fading animation */
+      @keyframes slide1 {
+        0% { opacity: 0; transform: translateY(20px); }
+        5%, 28% { opacity: 1; transform: translateY(0px); }
+        33%, 100% { opacity: 0; transform: translateY(-20px); }
+      }
+      @keyframes slide2 {
+        0%, 33% { opacity: 0; transform: translateY(20px); }
+        38%, 61% { opacity: 1; transform: translateY(0px); }
+        66%, 100% { opacity: 0; transform: translateY(-20px); }
+      }
+      @keyframes slide3 {
+        0%, 66% { opacity: 0; transform: translateY(20px); }
+        71%, 95% { opacity: 1; transform: translateY(0px); }
+        100% { opacity: 0; transform: translateY(-20px); }
+      }
+
+      .t1 { animation: slide1 9s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+      .t2 { animation: slide2 9s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+      .t3 { animation: slide3 9s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+      
+      .prefix {
+        font-weight: 600;
+        fill: #f0e6f2;
+        font-size: 28px;
+        opacity: 1;
+        filter: none;
+      }
+    </style>
+  </defs>
+
+  <g transform="translate(400, 50)">
+    <!-- We can add a static prefix if we want, but let's just keep the dynamic glowing text -->
+    <g class="neon">
+      <text class="t1">💻 BCA Student</text>
+      <text class="t2">🚀 Aspiring Full Stack Developer</text>
+      <text class="t3">🧠 AI Enthusiast</text>
+    </g>
+  </g>
+</svg>
